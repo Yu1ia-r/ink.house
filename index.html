@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ink. House</title>
+  <title>Ink.House</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="icon" href="Star1.svg">
@@ -14,19 +14,21 @@
   <header class="header">
     <div class="container header__container">
       <a href="#" class="logo">
-        Ink. House
+        Ink.House
       </a>
       <nav class="menu">
         <ul class="menu__list">
-          <li class="menu__item">
-            <a href="#" class="menu__link">Репродукции</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Новинки</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">О нас</a>
-          </li>
+          <div class="menu__left">
+            <li class="menu__item">
+              <a href="#catalog" class="menu__link">Репродукции</a>
+            </li>
+            <li class="menu__item">
+              <a href="#news" class="menu__link">Новинки</a>
+            </li>
+            <li class="menu__item">
+              <a href="#about-us" class="menu__link">О нас</a>
+            </li>
+          </div>
           <li class="menu__item">
             <a href="#" class="menu__link">
               <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,7 +60,7 @@
     <section class="hero">
       <div class="container hero__container">
         <div class="hero__content">
-          <h1 class="title">Реплики картин от <span class="text-highlighted">Ink. House</span></h1>
+          <h1 class="title">Реплики картин от&nbsp;<span class="text-highlighted">Ink.House</span></h1>
           <p class="hero__desc">Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения,
             доступные цены.</p>
           <a href="#" class="button hero__button">Продукция</a>
@@ -66,7 +68,7 @@
 
       </div>
     </section>
-    <section class="catalog">
+    <section class="catalog" id="catalog">
       <div class="container">
         <div class="catalog__top">
           <h2 class="subtitle">Репродукции</h2>
@@ -194,7 +196,7 @@
         </ul>
       </div>
     </section>
-    <section class="news">
+    <section class="news" id="news">
       <div class="container news__container">
         <h2 class="news__title">Новая коллекция французских авторов</h2>
         <p class="news__text">Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям,
@@ -204,10 +206,11 @@
           Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую востребованность
           направлений прогрессивного развития.
         </p>
+
+        <a href="#" class="button news__button">Ознакомиться</a>
       </div>
-      <a href="#" class="button news__button">Ознакомиться</a>
     </section>
-    <section class="about-us">
+    <section class="about-us" id="about-us">
       <div class="container">
         <div class="about-us__body">
           <div class="about-us__content">
@@ -255,7 +258,7 @@
       <nav class="footer__nav">
         <ul class="menu__list">
           <li class="menu__item">
-            <a href="#" class="menu__link">Репродукции</a>
+            <a href="#catalog" class="menu__link">Репродукции</a>
             <ul class="catalog__menu-list">
               <li class="catalog__menu-item gray">Франция</li>
               <li class="catalog__menu-item gray">Германия</li>
@@ -263,14 +266,14 @@
             </ul>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Новинки</a>
+            <a href="#news" class="menu__link">Новинки</a>
             <ul class="news__menu-list">
               <li class="news__menu-item gray">2021</li>
               <li class="news__menu-item gray">2020</li>
             </ul>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">О нас</a>
+            <a href="#about-us" class="menu__link">О нас</a>
             <ul class="about-us__menu-list">
               <li class="about-us__menu-item gray">Художники</li>
               <li class="about-us__menu-item gray">Менеджеры</li>
@@ -294,7 +297,7 @@
               <img src="img/youtube.svg" alt="" class="social-logo" width="24" height="24"></a>
           </li>
         </ul>
-        <p class="footer__text gray">Ink. House ®</p>
+        <p class="footer__text-left gray">Ink. House ®</p>
         <p class="footer__text gray">All rights reserved</p>
 
       </div>
